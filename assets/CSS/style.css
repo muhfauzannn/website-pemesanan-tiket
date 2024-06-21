@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+.circle{
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
+.small-circle{
+    width: 589px;
+    height: 589px;
+    border-radius: 50%;
+    background-color: #ED6B23;
+    position: absolute;
+    top: 60px;
+    left: -255px;
+    opacity: 80%;
+
+}
+.large-circle{
+    opacity: 80%;
+    width: 684px;
+    height: 684px;
+    border-radius: 50%;
+    background-color: #2D2A70;
+    position: absolute;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+label{
+    width: 200px;
+    font-weight: bold;
+}
+.button-login{
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-login > p{
+    margin-bottom: 7px;
+    opacity: 50%;
+}
+#logo-kai{
+    margin-top: 100px;
+    width: 282px;
+    height: 100px;
+    margin-bottom: 100px;
+}
+.item{
+  width: 206px;
+  height: 38px;
+  border-radius: 24px;
+  color: white;
+  background-color: #2D2A70;  
+  display: flex;
+  font-size: 19px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+.item > input {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    color: white;
+    background-color: #2D2A70;
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+}
+.input-form{
+    border: 0;
+    border-bottom: solid black 1px;
+    height: 2rem;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.signup-button{
+    background-color: #D9D9D9;
+    color: #2D2A70;
+}
+.regist-title{
+    width: 100%;
+    height: 110px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #2D2A70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.regist-title > p{
+    color: white;
+    font-size: 2rem;
+
+}
+
+/* Dashboard */
+.search-container{
+    height: 160px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    height: 120px;
+    width: 100%;
+    background-color: #2D2A70;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.search > form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#search-form{
+    width: 330px;
+    height: 45px;
+    background-color: #D9D9D9;
+    border-radius: 90px;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0;
+}
+.text-dashboard{
+    width: 330px;
+    height: 45px;
+    margin-left: 20px;
+}
+.text-dashboard > p{
+    margin-top: 10px;
+}
+.navbar{
+    width: 300px;
+    height: 60px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+.item-navbar{
+    height: 100%;
+    width: 50px;
+    /* background-color: #ED6B23; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.item-navbar > svg{
+    width: 32px;
+    height: 32px;
+    fill: #000000;
+    opacity: 60%;
+}
+
+.kereta{
+    width: 330px;
+    height: 130px;
+    background-color: #2D2A70;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 2rem;
+}
+.image-kereta{
+    overflow: hidden;
+    width: 150px;
+    height: 100%;  
+}
+.image-kereta > img{
+    width: 250px;
+    transform: translateX(-50%);
+}
+.keterangan-kereta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.keterangan-kereta > *{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ket-jadwal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ket-jadwal > p{
+    font-size: 10px;
+    text-align: center;
+}
+#cek-tiket{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #FF7325;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+.keterangan-kereta > form{
+    display: flex;
+    align-items: center;
+}
+.pesan-title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.pesan-title > a > svg {
+    width: 35px;
+    fill: white;
+    margin-left: 2rem;
+}
+.pesan-title > h1 {
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.pesan-title > .spacer {
+    flex-grow: 1;
+}
+.blue-background-img{
+    height: 100vh;
+    width: 100%;
+    background-color: #2D2A70;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+#background-img{
+    width: 100%;
+    /* transform: translateX(-30%); */
+    position: relative;
+    top: 15%;
+    z-index: -1;
+    opacity: 40%;
+    display: flex;
+}
+.info-pesan{
+    text-align: center;
+}
+.info-pesan > p{
+    color: white;
+    margin-bottom: 1rem;
+}
+#asal-tujuan-pesan{
+    margin-top: 1rem;
+    font-size: 25px;
+}
+.container-pesan{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 30px 30px;
+    margin-top: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2rem;
+}
+.container-pesan > *{
+    font-size: 1rem;
+}
+.container-pesan > form{
+    display: flex;
+    flex-direction: column;
+}
+.container-pesan > form > *{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.box-form{
+    border: 0;
+    border-bottom: solid black 1px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.first-form{
+    margin-top: 2rem;
+}
+#konfirmasi-pesan{
+    border: 0;
+    cursor: pointer;
+    background-color: #FF7325;
+    height: 40px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ticket-price-container {
+    background-color: #D9D9D9;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.container-grid{
+    display: grid;
+    width: 100%;
+    height: 150px;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    gap: 2rem;
+    /* align-items: center; */
+}
+.boxform-item{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ED6B23; */
+    align-items: center;
+
+}
+.container-pesan > label{
+    font-weight: bold !important;
+}
+.boxform-item > input{
+    border: 0;
+    border-bottom: solid black 1px;
+    padding: 10px;
+    text-align: center;
+}
+.boxform-item > p{
+    font-weight: bold;
+}
+
+.profile-gambar{
+    width: 80px;
+    height: 80px;
+    /* background-color: #2D2A70; */
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#gambarmu{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.unggah{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 34px;
+    height: 34px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+}
+.unggah > svg{
+    width: 20px;
+    height: 20px;
+    
+}
+#save-button{
+    height: 40px;
+    background-color: #FF7325;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+}
+/* End Dashboard */
